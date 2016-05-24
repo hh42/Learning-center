@@ -4,7 +4,7 @@ class Slider extends React.Component {
 		this.state = {
 			red: 0,
 			green: 0,
-			blue: 0
+			blue: 0,
 		}
 		/* bind update function to Slider element */
 		this.update = this.update.bind(this)
@@ -20,7 +20,7 @@ class Slider extends React.Component {
 	render(){
 
 		var divStyle = {
-		  backgroundColor: 'rgb('')',
+		  backgroundColor: "rgb(".concat(this.state.red).concat(",0,0)")
 		};
 
 		return (
@@ -103,10 +103,7 @@ NumInput.defaultProps = {
 	type: 'range'
 }
 
-ReactDOM.render(
-  <Slider />,
-  document.getElementById('slider')
-);
+ReactDOM.render( <Slider />, document.getElementById('slider'));
 
 
 // var divStyle = {
