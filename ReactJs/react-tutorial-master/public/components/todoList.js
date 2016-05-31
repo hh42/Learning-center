@@ -2,12 +2,16 @@
 
 class Todolist extends React.Component {
 	constructor(){
-		super();
 		this.state = {
-			todolist: [],
-			inputval: '',
-			id: 0
+			id: 2
 		}
+		console.log(this.state.id);
+		super();
+		// this.state = {
+		// 	todolist: [],
+		// 	inputval: '',
+		// 	id: 0
+		// }
 	}
 	update(e){
 		this.setState({
